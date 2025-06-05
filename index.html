@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1.0" 
+  />
+  <title>AI.kurd | Kurdish AI Engineers</title>
+
+  <!-- Google Font: Inter -->
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" 
+    rel="stylesheet" 
+  />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo-container">
+        <!-- Put your logo.png file in the same folder as this HTML -->
+        <img src="logo.png" alt="AI.kurd Logo" class="logo-img" />
+        <h1 class="logo-text">AI.kurd</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#students">Students</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger for mobile -->
+        <div class="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Kurdish AI Engineers</h2>
+      <p class="subtitle">24 Students, One Vision 🚀</p>
+    </div>
+  </section>
+
+  <!-- Students Section -->
+  <section id="students" class="section">
+    <div class="container">
+      <h2>Our Team</h2>
+      <p class="section-subtitle">Meet the 24 AI Engineers</p>
+      <div class="student-grid">
+        <!-- Only one “Our Team” card is shown here -->
+        <div class="student-card" tabindex="0">
+          <div class="student-name">Our Team</div>
+          <div class="student-role">Click to see all 24 AI Engineers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Student Details -->
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <span class="close-btn" aria-label="Close modal">&times;</span>
+      <h3 id="modal-title">Our Team (24 AI Engineers)</h3>
+      <ul id="modal-list" class="modal-list">
+        <!-- We’ll inject the 24 names here via JavaScript -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <p class="section-subtitle">
+        All AI projects: ML models, apps, chatbots, and more.
+      </p>
+      <div class="projects-grid">
+        <!-- Placeholder cards; fill in later -->
+        <div class="project-card">
+          <h3>Project Title</h3>
+          <p>Short description…</p>
+          <button class="view-more-btn">View More</button>
+        </div>
+        <div class="project-card">
+          <h3>Project Title</h3>
+          <p>Short description…</p>
+          <button class="view-more-btn">View More</button>
+        </div>
+        <div class="project-card">
+          <h3>Project Title</h3>
+          <p>Short description…</p>
+          <button class="view-more-btn">View More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities Section -->
+  <section id="activities" class="section">
+    <div class="container">
+      <h2>Activities</h2>
+      <p class="section-subtitle">
+        Seminars, workshops, group studies, and more.
+      </p>
+      <div class="activities-list">
+        <!-- Placeholder items; fill in later -->
+        <div class="activity-card">
+          <h4>Activity Title</h4>
+          <p>Details or date…</p>
+        </div>
+        <div class="activity-card">
+          <h4>Activity Title</h4>
+          <p>Details or date…</p>
+        </div>
+        <div class="activity-card">
+          <h4>Activity Title</h4>
+          <p>Details or date…</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources Section -->
+  <section id="resources" class="section">
+    <div class="container">
+      <h2>Resources</h2>
+      <p class="section-subtitle">
+        Documents, slides, cheat-sheets, GitHub repos, and more.
+      </p>
+      <div class="resources-grid">
+        <!-- Placeholder icons/links; fill in later -->
+        <div class="resource-item">
+          <span class="resource-icon">📄</span>
+          <p>Placeholder.pdf</p>
+        </div>
+        <div class="resource-item">
+          <span class="resource-icon">📄</span>
+          <p>Placeholder.pdf</p>
+        </div>
+        <div class="resource-item">
+          <span class="resource-icon">📁</span>
+          <p>GitHub Repo</p>
+        </div>
+        <div class="resource-item">
+          <span class="resource-icon">🎥</span>
+          <p>Tutorial Link</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container contact-section">
+      <h2>Contact Us</h2>
+      <form 
+        class="contact-form" 
+        action="mailto:youremail@domain.com" 
+        method="post" 
+        enctype="text/plain"
+      >
+        <label for="name">Name</label>
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          placeholder="Your Name" 
+          required 
+        />
+
+        <label for="email">Email</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Your Email" 
+          required 
+        />
+
+        <label for="message">Message</label>
+        <textarea 
+          id="message" 
+          name="message" 
+          rows="4" 
+          placeholder="Your Message" 
+          required
+        ></textarea>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p>Built by Klawd • Erbil Polytechnic University • 2025</p>
+      <div class="social-icons">
+        <a 
+          href="https://instagram.com/ahmadyassin00" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 24 24" 
+            class="icon-instagram"
+          >
+            <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3zm5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
